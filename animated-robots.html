@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        width: 100vw;
+      }
+
+      div {
+        background-color: dodgerblue;
+      }
+
+      /*-------------------- head ------------------------------*/
+
+      .top-head {
+        position: relative;
+      }
+
+      .left-side {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        bottom: -45px;
+        left: 15px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+      .right-side {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        bottom: -45px;
+        right: 15px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+
+      .left-side:hover {
+        transform: rotate(-10deg);
+      }
+
+      .right-side:hover {
+        transform: rotate(10deg);
+      }
+
+      .head {
+        width: 200px;
+        height: 100px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        position: relative;
+      }
+
+      .eyes {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border-radius: 50%;
+      }
+      .eye-1 {
+        bottom: 30%;
+        left: 25%;
+      }
+
+      .eyes:hover {
+        transform: scale(1.5);
+      }
+
+      .eye-2 {
+        right: 25%;
+        bottom: 30%;
+      }
+
+      /*-------------------- body ------------------------------*/
+
+      .body {
+        margin-top: 10px;
+        width: 200px;
+        height: 150px;
+      }
+
+      .hands {
+        position: relative;
+      }
+
+      .left-hand {
+        position: absolute;
+        width: 40px;
+        height: 100px;
+        left: -75px;
+        transform: rotate(45deg);
+      }
+      .right-hand {
+        position: absolute;
+        width: 40px;
+        height: 100px;
+        top: 0;
+        right: -75px;
+        transform: rotate(-45deg);
+      }
+
+      .left-hand:hover {
+        transform: rotate(30deg);
+      }
+
+      .right-hand:hover {
+        transform: rotate(-30deg);
+      }
+
+      /*-------------------- legs ------------------------------*/
+
+      .legs {
+        position: relative;
+      }
+
+      .left-leg {
+        margin-top: 10px;
+        width: 50px;
+        height: 70px;
+        position: absolute;
+        left: 10px;
+      }
+
+      .right-leg {
+        margin-top: 10px;
+        width: 50px;
+        height: 70px;
+        position: absolute;
+        right: 10px;
+      }
+
+      .left-leg:hover {
+        transform: rotate(10deg);
+      }
+
+      .right-leg:hover {
+        transform: rotate(-10deg);
+      }
+
+      .eye-1,
+      .eye-2,
+      .left-hand,
+      .right-hand,
+      .left-leg,
+      .right-leg,
+      .left-side,
+      .right-side {
+        transition-duration: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-head">
+      <div class="left-side"></div>
+      <div class="right-side"></div>
+    </div>
+    <div class="head">
+      <div class="eyes eye-1"></div>
+      <div class="eyes eye-2"></div>
+    </div>
+    <div class="body">
+      <div class="hands">
+        <div class="left-hand"></div>
+        <div class="right-hand"></div>
+      </div>
+    </div>
+    <div class="legs">
+      <div class="left-leg"></div>
+      <div class="right-leg"></div>
+    </div>
+  </body>
+</html>
